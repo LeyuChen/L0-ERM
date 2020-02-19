@@ -8,8 +8,8 @@ The empirical study is based on the transportation mode choice dataset of Horowi
 
 Here is a description of the variables in this dataset.
 
-Y: an indicator of whether automobile is the chosen mode of transportation.
-DCOST : the transit fare minus automobile travel cost in dollars 
+Y: an indicator of whether automobile is the chosen mode of transportation
+DCOST : the transit fare minus automobile travel cost in dollars
 CARS  : the number of cars owned by the traveler's household
 DOVTT : the transit out-of-vehicle travel time minus automobile out-of-vehicle travel time in minutes
 DIVTT : the transit in-vehicle travel time minus automobile in-vehicle travel time in minutes
@@ -30,7 +30,7 @@ To replicate Tables 1 and 2 of the paper, simply run the following Matlab progra
 
 Table1_p10_ERM.m
 Table1_p10_logit_lasso.m
-Table1_p200_ERM.m 
+Table1_p200_ERM.m
 Table1_p200_logit_lasso.m
 
 Table2_p10_ERM.m
