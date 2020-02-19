@@ -8,5 +8,8 @@ rng(1,'twister');
 
 p=10; type=0; 
 
-simulation_ERM(p,type); 
+maxT = 0; % If maxT = 0, then the MIO solver will run until convergence.
+          % If maxT > 0, then the MIO solver will run with a time limit specified by maxT in CPU seconds.
+
+simulation_ERM(p,type,maxT); 
 

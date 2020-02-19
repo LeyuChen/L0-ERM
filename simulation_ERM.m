@@ -1,5 +1,5 @@
 
-function simulation_ERM(p,type)
+function simulation_ERM(p,type,maxT)
 
 R = 100; % simulation repetitions
 N = 100; % size of the training sample
@@ -41,7 +41,7 @@ val_score_test=zeros(R,1); % out-of-sample score at the estimated parameter vect
 
 bnd=[-10*ones(size(bhat,1),1) 10*ones(size(bhat,1),1)];
 
-maxT=3600; abgap=0;
+abgap=0;
 
 c_bar=log(log(max([N;p])));
 lamda_rate = sqrt(log(max([N;p]))/N);
@@ -88,6 +88,5 @@ end
 output_str = ["Corr_sel";"Orac_sel";"Num_irrel";"in_RR";"out_RR"];
 disp(['Simulation results for L0-ERM under DGP ' DGP ' with p = ' num2str(p)]);
 disp([output_str num2str((mean([sel sel_all num_irrel (1-val_score)./(1-DGP_score) (1-val_score_test)./(1-DGP_score_test)]))')]);
-
 end
 
