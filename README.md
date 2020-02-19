@@ -22,13 +22,9 @@ https://www.gurobi.com/
 
 The reported MIO computation results in the paper were obtained using Gurobi version 8. Since the ERM problem admits multiple global minimizers, use of different Gurobi versions may yield different classifier coefficient estimates. But the minimized objective values (in-sample risk) would be essentially identical. 
 
-Note that the problem of minimizing empirical misclassification risk is equivalent to that of the maximum score estimation.
-Therefore, the ERM implementation here is based on the MIO formulation of maximum score estimation problem. 
+Note that the problem of minimizing empirical misclassification risk is equivalent to that of the maximum score estimation. Therefore, the ERM implementation here is based on the MIO formulation of maximum score estimation problem. 
 
-Replication of the logit_lasso estimation results requires the Matlab implementation of the glmnet algorithms.
-The glmnet codes, which were written by Qian, Hastie, Friedman, Tibshirani, and Simon (2013), are collected in the
-folder "glmnet_matlab". 
-
+Replication of the logit_lasso estimation results requires the Matlab implementation of the glmnet algorithms. The glmnet codes, which were written by Qian, Hastie, Friedman, Tibshirani, and Simon (2013), are collected in the folder "glmnet_matlab". 
 
 To replicate Tables 1 and 2 of the paper, simply run the following Matlab programs:
 
@@ -43,8 +39,7 @@ Table2_p200_ERM.m
 Table2_p200_logit_lasso.m
 
 
-Note that for the simulations with p = 200, we set a time limit of one hour for each MIO computation. 
-Simulations for this case could take a long time as there are 100 repetitions, each of which could take up to one hour.
+Note that for the simulations with p = 200, we set a time limit of one hour for each MIO computation. Simulations for this case could take a long time as there are 100 repetitions, each of which could take up to one hour.
 
 
 To replicate Table 3 of the paper, simply run the program "Empirical_Horowitz.m" with the setting:
