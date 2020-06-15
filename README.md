@@ -20,7 +20,7 @@ The Matlab version of the Gurobi solver has to be installed for running the code
 
 https://www.gurobi.com/
 
-The reported MIO computation results in the paper were obtained using Gurobi version 8. Since the ERM problem admits multiple global minimizers, use of different Gurobi versions may yield different classifier coefficient estimates. But the minimized objective values (in-sample risk) would be essentially identical. 
+Since the ERM problem admits multiple global minimizers, use of different Gurobi versions may yield different classifier coefficient estimates. But the minimized objective values (in-sample risk) would be essentially identical. 
 
 Note that the problem of minimizing empirical misclassification risk is equivalent to that of the maximum score estimation. Therefore, the ERM implementation here is based on the MIO formulation of maximum score estimation problem. 
 
